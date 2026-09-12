@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout Code
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
 
       - name: Deploy Via SSH
         uses: appleboy/ssh-action@v1.0.3
@@ -23,6 +23,6 @@ jobs:
             cd /home/ubuntu/nodejs-app-deploy-github-actions
             git pull
             docker compose up -d build
-            
+
 
 
